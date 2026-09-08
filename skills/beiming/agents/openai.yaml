@@ -1,0 +1,4 @@
+interface:
+  display_name: "Beiming · 北冥神功"
+  short_description: "Understand sources and find what is useful to you"
+  default_prompt: "Use $beiming to understand this material and find what is worth learning, adapting, or retaining in my context."

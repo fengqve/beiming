@@ -1,0 +1,11 @@
+**The most useful idea is to preserve why you saved a reference, rather than add more categories.** Your topic tags already describe what a link concerns; the missing information is what you hoped to do with it.
+
+The example combines two mechanisms. Its three shelves organize reading around intent—answering a question, exploring, or using something now. The optional one-line reason preserves the reader’s original motivation, and showing it when the item resurfaces helps reconnect the reference with that motivation. Keeping items indefinitely avoids automatic loss, but does not itself solve accumulation.
+
+Those are plausible mechanisms, not demonstrated results. This is a fictional example, and the designer’s belief that people will return to reading is untested. It offers no evidence of increased return visits or completion.
+
+For your occasional writing projects, the strongest borrowing candidate is **a brief purpose note within whatever you already use**, when a reference’s value would otherwise be difficult to reconstruct. For example: “Useful counterargument to my claim that convenience always wins.” That carries more future value than another topic label because it records a relationship to your writing.
+
+The three shelves are less convincing for you. They would introduce another classification decision, their boundaries overlap, and an item’s usefulness can change with the project. You can borrow their underlying question—“Why might I return to this?”—without adopting the shelves or a new app. Making the note mandatory would also conflict with your wish to avoid another chore; optionality is part of the mechanism worth preserving.
+
+The reusable lesson is: **when retrieval fails because intent has faded, preserving a little context may help more than adding organizational structure.** That applies if forgotten purpose is the bottleneck; it will not necessarily help if the real obstacle is finding time to write or locating the reference at all. A meaningful sign of value would be whether an old note helps you recognize a reference’s role in a draft without rereading the whole source. For now, that remains a promising adaptation, not a proven improvement—and it requires no overhaul of your system.
