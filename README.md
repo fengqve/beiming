@@ -65,7 +65,7 @@
 
 **1. 在 Codex 中安装。** 复制这句话发送给 Codex：
 
-    $skill-installer install https://github.com/fengqve/beiming/tree/v0.1.0/skills/beiming
+    $skill-installer install https://github.com/fengqve/beiming/tree/v0.1.1/skills/beiming
 
 **2. 发来材料，调用北冥。**
 

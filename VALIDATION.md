@@ -1,6 +1,29 @@
 # Validation / 验证记录
 
-Version 0.1.0 · 2026-09-08
+## Version 0.1.1 · 2026-09-08
+
+This patch makes an inferred borrowing focus explicit and revisable. Ambiguous requests
+can expose useful alternative lenses before a provisional choice; explicit requests
+still receive direct answers. Activation, tools, and permissions are unchanged.
+本次小修让推测的借鉴方向更透明、可纠正；明确意图仍直接回答，不增加强制提问。
+
+The exact released rule text was compared with 0.1.0 in eleven paired cases:
+
+- Initial six-case exploratory batch: both variants met the acceptance criteria.
+- Three independently authored follow-up cases, each answered in a fresh context:
+  two ambiguous cases were rated partial compliance for 0.1.0 and compliance for
+  0.1.1; the explicit-request case passed for both.
+- Two further held-out cases, run after selection: both variants passed, with no
+  substantive regression identified by a separate variant-blind reviewer.
+
+The observed benefit is narrower than better intent prediction: provisional choices
+became easier to inspect. Advice was largely similar. These qualitative synthetic
+cases do not establish a population success rate, reduced user effort, or productivity
+gain. The earlier equal results are retained, not omitted. The rule text remained
+unchanged throughout the follow-up and held-out checks.
+新证据支持假设表达更清楚，不等于已经证明更会猜中用户重点；真实使用收益仍待观察。
+
+## Version 0.1.0 · 2026-09-08
 
 This is a small qualitative smoke test, not a benchmark or proof that a Skill outperforms
 the same instructions pasted as a prompt. Outputs vary with the host model and available tools.

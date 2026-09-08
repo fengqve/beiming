@@ -78,7 +78,7 @@ The response follows your question, rather than filling the same template every 
 
 **1. Install in Codex.** Send this to Codex:
 
-    $skill-installer install https://github.com/fengqve/beiming/tree/v0.1.0/skills/beiming
+    $skill-installer install https://github.com/fengqve/beiming/tree/v0.1.1/skills/beiming
 
 **2. Add your material and invoke Beiming.**
 
