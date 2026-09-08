@@ -31,6 +31,17 @@ cover repository infrastructure and other existing contracts; they are **not** 1
 
 ## Limits / 限制
 
+The homepage now features two fresh real-source demonstrations: [Duolingo](examples/duolingo.md)
+and [Basecamp](examples/basecamp.md). Each was opened and analyzed in an independent Codex
+agent run on 2026-09-08 using Beiming 0.1.0. Their user scenarios are demonstrations, not
+customer testimonials. The earlier fictional fixture remains available for repeatable regression checks.
+
+The package relies on the host's source-access tools and available context. An inaccessible
+page or incomplete image should be reported when encountered; personal history is not assumed.
+The package adds no background service or automatic memory writes. Host platform data-handling
+rules still apply. The fictional martial-arts comparison is a naming metaphor; the project
+is independent and has no official affiliation with the referenced works or companies.
+
 - The machine's older PATH CLI 0.146.0 failed before analysis because its configured model
   required a newer client. No model setting was changed to hide this failure.
 - These runs do not prove universal source access, stable quality across models, or a productivity gain.

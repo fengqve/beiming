@@ -1,99 +1,91 @@
-# Beiming · 北冥神功
+# 北冥神功 · Beiming
 
-**Understand the source. Find what matters to you.**
+**简体中文** · [English](README.en.md)
 
-A lightweight Codex skill for examining images, links, and text—and finding insights
-worth adapting to your own context.
+### 把「这个真好」变成「这点我用得上」。
 
-[简体中文](README.zh-CN.md) · [Try an example](examples/input.md) · [Read the skill](skills/beiming/SKILL.md)
+刷到一篇好文章、看到一个好产品、收到一张有意思的截图——除了收藏，你还能从中得到什么？
 
-You send something interesting. Beiming asks: **What is really going on here, and what,
-if anything, is useful to you?** It looks at the source's structure, mechanism, and limits
-before relating it to your intent. It can also conclude that there is nothing new to borrow.
+**北冥神功是一个 Codex Skill。** 发来图片、链接或文字，它会看懂材料的结构与内核，结合你正在做的事，找出值得借鉴的机制，以及适合你的用法。
 
-## A small example
+    $beiming 这个有什么值得借鉴的？
 
-**You:** “I already tag my writing references, but forget why I saved them. I don't want
-another categorization chore.” You share an app concept with three reading shelves and
-an optional reason beside each saved item.
+[开始使用](#开始使用) · [看真实材料案例](#别人做得好我能学到什么) · [为什么叫北冥神功](#为什么是北冥神功而不是吸星大法)
 
-**Beiming, in an actual test run:**
+## 别人做得好，我能学到什么？
 
-> The most useful idea is to preserve why you saved a reference, rather than add more categories.
+下面用两份真实公开材料演示。提问背景是为演示设置的，回答来自 Beiming 本次实际运行。
 
-> You can borrow their underlying question—“Why might I return to this?”—without adopting the shelves or a new app.
+### ① 想学多邻国，值得借鉴的只有连续打卡吗？
 
-The response also distinguishes the concept's untested promise from evidence of improvement.
-[Read the input](examples/input.md) and [full response](examples/output.md).
-The input is an original fictional fixture; the response is an actual run, not a product-results claim.
+**发来：** [多邻国官方对连续打卡与习惯养成的分析](https://blog.duolingo.com/how-duolingo-streak-builds-habit/)。
 
-## Try it
+**问它：**「我在做一个日常学习小工具，希望提高回访，但不想让用户因为漏一天就觉得前功尽弃。这篇有什么值得借鉴的？」
 
-In Codex, ask the built-in skill installer:
+**Beiming 找到的重点：**
 
-```text
-$skill-installer install https://github.com/fengqve/beiming/tree/v0.1.0/skills/beiming
-```
+> 让用户看到积累，同时给偶尔缺席留余地。
 
-Then attach an image, paste text, or provide a link:
+它顺着文章里的庆祝反馈、损失厌恶和冻结机制，联系到这个产品的目标：完成短学习后呈现进展；漏一天回来时，保留累计成果，让“继续下一次”容易被看见。
 
-```text
-$beiming What can I learn from this? I am trying to [your goal],
-and I need to preserve [your constraint].
-```
+**值得带走的判断：奖励连续，也要支持恢复。** 这比单独照搬一枚打卡火焰，更接近这个开发者要解决的问题。
 
-Context is optional. Use an existing conversation when it already explains your situation.
-Without that context, Beiming can still analyze the material but should not pretend to know you.
-In clients with a skill picker, select **Beiming · 北冥神功**.
-If a newly installed skill is not listed, start a fresh task and check the client's skill settings.
-See [Codex's skill documentation](https://learn.chatgpt.com/docs/build-skills) for client-specific behavior.
+[查看完整提问与实际回答 →](examples/duolingo.md)
 
-## What comes back
+### ② 用户说要一个日历，你只有一周，怎么办？
 
-- **Insight:** something the material helps you see differently.
-- **Adaptation:** a specific mechanism worth borrowing, with changes and limits.
-- **Reusable lesson:** a candidate principle, including when it applies.
+**发来：** [Basecamp《Shape Up》中的 Set Boundaries](https://basecamp.com/shapeup/1.2-chapter-03)。
 
-These are distinctions, not mandatory report sections. Responses should be as short or
-as detailed as the material deserves. A summary, an impressive metaphor, or a list of
-generic best practices is not enough.
+**问它：**「我是独立开发者，用户要求加一个完整日历，我只有一周时间。这章对我有什么值得借鉴的？」
 
-## Why Beiming, not Xixing?
+**Beiming 找到的重点：**
 
-The name comes from **北冥神功**, a fictional martial art in Jin Yong's wuxia stories.
-**吸星大法** (Xixing Dafa) offers a useful warning: absorbing other people's power can
-bring side effects when incompatible forces accumulate.
+> 先缩小要解决的问题，再决定功能范围。
 
-We borrow that contrast as a learning metaphor. Copying a successful technique without
-understanding its assumptions can add friction—or conflict with what already works.
-Beiming stands for the aspiration to **understand, select, and integrate**, rather than
-merely accumulate. In this skill, integration means a reasoned suggestion, not automatic
-changes to your work or memory.
+书里的客户想要日历，是因为她在家接到预约电话，却得开车回办公室查看会议室空档。真正需要解决的是“看见可预约的时间”。
 
-This is our naming metaphor, not a definitive comparison of fictional martial arts or
-their different editions. This is an independent project, not an official Jin Yong product.
-You do not need to know wuxia to use it.
+结合“一周、一个人”的背景，Beiming 建议先复盘用户最近一次卡住的经过；如果问题确实是找空档、也已有日程数据，再考虑一个聚焦的空档视图，而不是直接展开整套日历功能。
 
-## Deliberately small
+**值得带走的判断：需求里的功能名，不等于用户真正卡住的地方。**
 
-Two runtime files. No bundled service, scraper, database, API key, or telemetry code.
-Beiming uses the model and tools already available in your Codex session.
+[查看完整提问与实际回答 →](examples/basecamp.md)
 
-- It cannot guarantee access to every link or read all your previous conversations.
-- Unreadable images and inaccessible pages should be reported, not guessed.
-- “Worth retaining” does not save anything. No automatic memory, project, or rule changes.
-- Platform data handling still applies; this is not an offline or no-upload guarantee.
-- Other agents and plugin-marketplace installation are not claimed as tested.
+## 什么时候用？
 
-## Improve it with real examples
+| 你手里的东西 | 可以怎么问 |
+| --- | --- |
+| 一个喜欢的产品截图 | 它的结构和交互哪里好？对我正在做的产品有什么启发？ |
+| 一篇增长、设计或技术文章 | 哪个机制值得借鉴？放到我的情况里，要改什么？ |
+| 一段让你眼前一亮的话 | 它真正说中了什么？能变成什么可复用的判断？ |
+| 一份别人的复盘 | 这里有哪些经验，与我正在遇到的问题有关？ |
 
-See [validation notes](VALIDATION.md) for the tested scope and remaining limits.
+它会帮你分清：**新的理解、可以迁移的做法、值得保留的判断。** 回答围绕你的问题展开，而不是每次填满同一张模板。
 
-Open an issue or pull request with a shareable input, the context you supplied, the
-actual response, and what was missed. Remove private information first.
-Small improvements backed by observed behavior are more useful than longer instructions.
+## 开始使用
 
-## License
+**1. 在 Codex 中安装。** 复制这句话发送给 Codex：
 
-[MIT](LICENSE). The project instructions and original examples are reusable under that license;
-third-party articles, artwork, characters, and other referenced material are not relicensed.
+    $skill-installer install https://github.com/fengqve/beiming/tree/v0.1.0/skills/beiming
+
+**2. 发来材料，调用北冥。**
+
+    $beiming 这个有什么值得借鉴的？
+    我正在做……，最在意的是……。
+
+已有背景的对话里，一句“这个有什么值得借鉴的？”就可以。也可以在技能选择器中选择 **Beiming · 北冥神功**。
+
+## 为什么是北冥神功，而不是吸星大法？
+
+**吸收，不等于消化；收集，不等于会用。**
+
+借用武侠的比喻：吸星大法能吸来内力，却可能因异种力量难以调和而产生副作用。学习也有类似的问题——别人的方法一个个搬进来，看起来越来越丰富，用起来却可能互相打架。
+
+我们取“北冥”的寓意：**理解、取舍、融会。** 看懂它为什么有效，找到适用条件，把适合的部分化为自己的认识。
+
+不熟悉武侠也没关系。Beiming 做的，就是帮你从别人的好东西里，找到对自己真正有用的部分。
+
+## 一起练功
+
+欢迎在 [Issues](https://github.com/fengqve/beiming/issues) 分享「材料 + 你的问题 + 实际回答」，或者提交改进。最有帮助的反馈是：它有没有让你多看见一点，或者做出一个更好的判断？
+
+[MIT 开源](LICENSE) · [核心指令](skills/beiming/SKILL.md) · [验证记录与技术说明](VALIDATION.md)
